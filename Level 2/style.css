@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Sticky Footer Fix: Make body full height column flexbox */
+body {
+  background-image: url(https://i.pinimg.com/736x/5a/6b/50/5a6b5014f1c4e9e04fb8c0d78c72b193.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Flexbox Navigation Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover{
+    color: greenyellow;
+    ;    
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #494D5F;
+  color: white;
+}
+
+/* Push remaining vertical space to keep footer at the bottom */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
+  width: 100%;
+}
+
+.container h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* 3-Column Grid Layout */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card Container */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Perfect-Fit Image Rule */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption Section */
+.card-caption {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Flexbox Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+/* Responsiveness: Stack columns on smaller screens */
+@media (max-width: 900px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .header, .footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
