@@ -2,7 +2,7 @@
 
 Welcome to my repository for the **Codveda Web Development Internship**. This repository contains my implementations for the assigned domain tasks structured across basic, intermediate, and advanced levels.
 
-## 📌 Progress Overview
+## <u>📌 Progress Overview </u>
 
 ### Level 1: Basic
 - [x] **Task 1: Simple Static Website** – Multi-page static site built with HTML5, CSS3, and custom media queries[cite: 1].
